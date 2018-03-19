@@ -1,0 +1,37 @@
+h1 {color: yellow;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;}
+
+p.it {font-style: italic;}
+
+p.b {
+	border-width: 3px;
+	border-style: outset;
+	border-radius: 10px;
+	background-color: lightblue;
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-right : 40px;
+	padding-bottom: 40px;
+}
+
+.bo {
+	border-width: 3px;
+	border-style: ridge; 
+}
+
+body {
+   background-image: url("http://punjabkesari.com/wp-content/uploads/2017/07/1-747-768x402.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
