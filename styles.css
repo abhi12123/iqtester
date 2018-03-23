@@ -3,15 +3,16 @@ h1 {color: yellow;
 
 p.it {font-style: italic;}
 
-p.b {
-	border-width: 3px;
-	border-style: outset;
-	border-radius: 10px;
-	background-color: lightblue;
-	padding-left: 40px;
-	padding-top: 40px;
-	padding-right : 40px;
-	padding-bottom: 40px;
+p.a {
+  border-width: 3px;
+  border-style: outset;
+  border-radius: 10px;
+  background-color: lightyellow;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right : 40px;
+  padding-bottom: 40px;
+  text-align: center;
 }
 
 .bo {
@@ -19,11 +20,12 @@ p.b {
 	border-style: ridge; 
 }
 
+/*
 body {
    background-image: url("http://punjabkesari.com/wp-content/uploads/2017/07/1-747-768x402.jpg");
    background-repeat: no-repeat;
    background-attachment: fixed;
-   background-position: center;}
+   background-position: center;}*/
 
 button {
     background-color: #4CAF50; /* Green */
@@ -34,4 +36,30 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+div.login{
+  border-width: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: brown;
+  background-color: lightyellow;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right : 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+div.signup{
+  border-width: 3px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: yellow;
+  background-color: lightgreen;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right : 40px;
+  padding-bottom: 40px;
+  text-align: center;
 }
