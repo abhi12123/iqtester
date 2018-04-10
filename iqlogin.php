@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>	
 <html>
 <head>
@@ -47,7 +48,7 @@
             	<br>
             	<div class="signup">
             		<center><p><b>New to IQ Tester? Sign up</b></p></center>
-            		<form name="signup">
+            		<form name="signup" method="post" action="iqlogin.php">
             			First Name:
   						    <input type="text" name="firstname" value=""><br><br>
   						    Last Name:
