@@ -1,3 +1,16 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: iqlogin.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: iqlogin.php");
+  }
+?>
 <!DOCTYPE html>	
 <html>
 <head>
@@ -13,6 +26,9 @@
             <td rowspan = "10" width="200">
             </td>
             <td width="1100">
+			    <?php  if (isset($_SESSION['username'])) : ?>
+				<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+				<?php endif ?>
             	<center><img src = "images/eins.jpg" alt = "Image of Albert Einstein" width = "300" height = "300" border="3"/></center>
 				<p class="b" style = "font-family:arial;">A person's <big>Intelligence Quotient (IQ)</big> is, arguably, one of their most important characteristics. It is believed that you can predict a person's behavior more accurately from their IQ than from any other single piece of information about them.<br><br>The average IQ is 100. Have you wondered what your IQ score is? Our original IQ Test will give you a fast, free and accurate iq score. Take our quick free IQ test and find out just how smart you are.</p><br>
 				<div class="bo">
@@ -84,11 +100,13 @@
 				<br><br></form>
 				</li>
 				<br>
-				<button type="submit">Submit</button>
+				<button type="submit">Submit</button>1
+				<h3> <a href="iqtester.php?logout='1'">logout</a> </h3>
 				</form>
 			</td>
             <td rowspan="10" width="200"></td>
         </tr>
     </table>
+	
 </body>
 </html>
